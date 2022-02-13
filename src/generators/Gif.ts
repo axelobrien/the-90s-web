@@ -1,4 +1,4 @@
-export default function() {
+export default function randomGif() {
 	const gifList = [
 		undefined,
 		'https://web.archive.org/web/20090821222115/http://geocities.com/SunsetStrip/Lounge/7650/dollarspindownd.gif',
@@ -16,6 +16,14 @@ export default function() {
 		'https://web.archive.org/web/20091023224141/http://geocities.com/catsareus_2000/CATONPIANO.gif',
 		'https://web.archive.org/web/19970222175012im_/http://www1.geocities.com/Yosemite/8866/netscpe3.gif',
 		'https://web.archive.org/web/20091021214904/http://www.geocities.com/mycatmaomao/x-hikashi13.gif',
+		'https://cdn.vox-cdn.com/uploads/chorus_asset/file/8688491/hiE5vMs.gif',
+		'https://uploads.guim.co.uk/2016/10/27/hamster2.gif',
+		'https://uploads.guim.co.uk/2016/10/27/smoking-skull.gif',
+		'https://media4.giphy.com/media/vGWZEktceb6HS/giphy.gif?cid=ecf05e4747x3o5ceh35atlikm6uoqj6q7syurb490nh6n9rj&rid=giphy.gif&ct=s',
+		'https://media2.giphy.com/media/ZMh2h5FL02tMs/200w.webp?cid=ecf05e4747x3o5ceh35atlikm6uoqj6q7syurb490nh6n9rj&rid=200w.webp&ct=s',
+		'https://media4.giphy.com/media/26VtnKCdw63SM/200.webp?cid=ecf05e47j12fzpid50ky0ipc461vdom285phuij38vb1lgbf&rid=200.webp&ct=s',
+		'https://media4.giphy.com/media/dUC6HYIJMw6IA2cECV/giphy.gif?cid=790b7611b7f9d8434ce9da8779e950e816bbf882796cb6b8&rid=giphy.gif&ct=s',
+		'https://media2.giphy.com/media/anjRJ4nv9WJzO/200w.webp?cid=ecf05e47lunjkpn0yl5ydaqglq1gsyqk4dplj197oexy34kq&rid=200w.webp&ct=g',
 	]
 	const gif = gifList[Math.floor(Math.random() * gifList.length)]
 	return gif

@@ -4,11 +4,6 @@ import randomFont from '../generators/Font'
 import randomSite from '../generators/Site'
 import WebsiteListItem from './WebsiteListItem'
 
-interface WebsiteListItemProps {
-	url: string
-	title: string
-}
-
 function List() {
   const headingRef = useRef<HTMLParagraphElement>(null)
 

@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react'
+import { useEffect, useRef } from 'react'
 import randomColor from '../generators/Color'
 import randomFont from '../generators/Font'
 import randomFiller from '../generators/Filler'

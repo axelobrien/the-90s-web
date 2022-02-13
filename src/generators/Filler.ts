@@ -1,4 +1,4 @@
-export default function() {
+export default function randomFiller() {
 	const textList = [
 		"Hello!! I'm writing this on 3/14/1997!!! My 12th birthdy!! my name is WALTER, and I just got my first personal computer!! I cant wait to use the world wide web!! remember to e-mail me at WALTER42812@aol.com!!!!",
 		'HI!!!!!!! I got a personal computer today! Today I learned Hyper Text Markup Language (you can just call it HTML), and I am now able to write code. I am so excited!',

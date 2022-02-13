@@ -1,9 +1,10 @@
 import React, { useEffect } from 'react'
 import Heading from './components/Heading'
-import Gifs from './components/Gifs'
+import Gif from './components/Gifs'
 import Filler from './components/Filler'
 import List from './components/List'
 import randomBackground from './generators/Background'
+import Marquee from './components/Marquee'
 
 function App() {
   useEffect(() => {
@@ -13,9 +14,11 @@ function App() {
   return (
     <>
       <Heading/>
-      <Gifs/>
+      <Gif/>
       <Filler/>
       {Math.random() > 0.5 && <List/>}
+      <Marquee/>
+      {Math.random() > 0.5 && <Gif/>}
     </>
   )
 }

@@ -1,11 +1,9 @@
-import React from 'react'
-
 interface WebsiteListItemProps {
 	url: string
 	title: string
 }
 
-export default function(props: WebsiteListItemProps) {
+export default function WebsiteListItem(props: WebsiteListItemProps) {
 	const { url, title } = props
 
 	return (<>
