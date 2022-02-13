@@ -1,26 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from 'react'
+import Heading from './components/Heading'
+import Gifs from './components/Gifs'
+import Filler from './components/Filler'
+import List from './components/List'
+import randomBackground from './generators/Background'
 
 function App() {
+  useEffect(() => {
+    randomBackground()
+  }, [])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <Heading/>
+      <Gifs/>
+      <Filler/>
+      {Math.random() > 0.5 && <List/>}
+    </>
+  )
 }
 
-export default App;
+export default App
