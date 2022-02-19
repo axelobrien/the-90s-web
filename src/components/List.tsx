@@ -1,6 +1,6 @@
 import React, { useEffect, useRef} from 'react'
 import randomColor from '../generators/Color'
-import randomFont from '../generators/Font'
+import fromList from '../generators/FromList'
 import randomSite from '../generators/Site'
 import WebsiteListItem from './WebsiteListItem'
 
@@ -13,7 +13,7 @@ function List() {
     if (headingRef.current) {
       headingRef.current.style.color = randomColor()
 			headingRef.current.style.backgroundColor = randomColor()
-      headingRef.current.style.fontFamily = randomFont()
+      headingRef.current.style.fontFamily = fromList('fonts')
     }
   }, [headingRef])
 

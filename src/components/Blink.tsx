@@ -1,7 +1,6 @@
 import React, { useRef, useEffect } from 'react'
 import randomColor from '../generators/Color'
-import randomText from '../generators/Marquee'
-import randomFont from '../generators/Font'
+import fromList from '../generators/FromList'
 
 function Blink() {
 	const paragraphRef = useRef<HTMLParagraphElement>(null)
@@ -9,13 +8,13 @@ function Blink() {
 	useEffect(() => {
 		if (paragraphRef.current) {
 			paragraphRef.current.style.color = randomColor()
-			paragraphRef.current.style.fontFamily = randomFont()
+			paragraphRef.current.style.fontFamily = fromList('fonts')
 		}
 	}, [paragraphRef])
 	
 	return (<>
 		<p className='animate-blink mx-auto text-2xl' ref={paragraphRef}>
-			{randomText()}
+			{fromList('sentences')}
 		</p>
 	</>)
 }

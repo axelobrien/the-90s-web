@@ -1,7 +1,7 @@
-import randomGif from '../generators/Gif'
+import fromList from "../generators/FromList"
 
 function Gif () {
-	const gif = randomGif()
+	const gif = fromList('foregroundGifs')
 	
 	return (<>
 		<img src={gif} className='w-min aspect-auto max-h-40 mx-auto my-3' alt=''/>

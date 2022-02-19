@@ -1,7 +1,6 @@
 import { useRef, useEffect } from 'react'
 import randomColor from '../generators/Color'
-import randomFont from '../generators/Font'
-import randomWelcome from '../generators/Welcome'
+import fromList from '../generators/FromList'
 
 function Heading() {
   const headingRef = useRef<HTMLHeadingElement>(null)
@@ -9,13 +8,13 @@ function Heading() {
   useEffect(() => {
     if (headingRef.current) {
       headingRef.current.style.color = randomColor()
-      headingRef.current.style.fontFamily = randomFont()
+      headingRef.current.style.fontFamily = fromList('fonts')
     }
   }, [headingRef])
   
 	return (
     <>
-      <h1 className={`text-3xl text-center mb-3`} ref={headingRef}>{randomWelcome()}</h1>
+      <h1 className={`text-3xl text-center mb-3`} ref={headingRef}>{fromList('welcomes')}</h1>
     </>
   )
 }

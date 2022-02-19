@@ -1,16 +1,11 @@
-import React, { useEffect } from 'react'
 import Heading from './components/Heading'
 import Gif from './components/Gifs'
 import Filler from './components/Filler'
 import List from './components/List'
-import randomBackground from './generators/Background'
 import Marquee from './components/Marquee'
 import Blink from './components/Blink'
 
 function App() {
-  useEffect(() => {
-    randomBackground()
-  }, [])
 
   function shuffle<T>(array: T[]) {
     let currentIndex = array.length,  randomIndex;
