@@ -4,7 +4,7 @@ function Gif () {
 	const gif = randomGif()
 	
 	return (<>
-		<img src={gif} className='w-min max-h-40 mx-auto' alt="A gif straight from the 90's"/>
+		<img src={gif} className='w-min aspect-auto max-h-40 mx-auto my-3' alt=''/>
 	</>)
 }
 

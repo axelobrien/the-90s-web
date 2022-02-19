@@ -16,10 +16,12 @@ function Marquee() {
 	}, [marqueeRef])
 	
 	return (
-		<div className='overflow-hidden border-4 m-5 w-1/3 mx-auto' ref={marqueeRef}>
-				<p className='text-white text-2xl animate-marquee10' ref={marqueeTextRef}>
+		<div className='overflow-hidden border-4 m-5 w-5/6 md:w-1/3 mx-auto' ref={marqueeRef}>
+			<div className="animate-marquee10">
+				<p className='text-white text-2xl w-max animate-marqueeText10' ref={marqueeTextRef}>
 					{randomMarquee()}
 				</p>
+			</div>
 		</div>
 	)
 }

@@ -14,8 +14,11 @@ export default function randomSiteList(idxStart: number) {
 	}
 
 	for (let i = 0; i < 3; i++) {
-		const site = siteList[idxStart + i]
-		finalSitesList.push(site)
+		if (idxStart + i < siteList.length) {
+			finalSitesList.push(siteList[idxStart + i])
+		} else {
+			finalSitesList.push(siteList[idxStart + i - siteList.length])
+		}
 	}
 
 	return finalSitesList

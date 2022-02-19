@@ -15,7 +15,7 @@ function Heading() {
   
 	return (
     <>
-      <h1 className={`text-3xl text-center`} ref={headingRef}>{randomWelcome()}</h1>
+      <h1 className={`text-3xl text-center mb-3`} ref={headingRef}>{randomWelcome()}</h1>
     </>
   )
 }
