@@ -12,11 +12,11 @@ function Heading() {
     }
   }, [headingRef])
   
-	return (
-    <>
-      <h1 className={`text-3xl text-center mb-3`} ref={headingRef}>{fromList('welcomes')}</h1>
-    </>
-  )
+	return (<>
+    <p className={`text-3xl text-center mb-3`} ref={headingRef}>
+      {fromList('welcomes')}
+    </p>
+  </>)
 }
 
 export default Heading

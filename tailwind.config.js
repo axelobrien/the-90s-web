@@ -7,12 +7,12 @@ module.exports = {
     extend: {
       keyframes: {
         marquee:{
-          "0%": { "transform": "translatex(0%)"},
-          "100%": { "transform": "translatex(100%)"}
+          "0%": { "transform": "translatex(100%)"},
+          "100%": { "transform": "translatex(0%)"}
         },
         marqueeText:{
-          "0%": { "transform": "translatex(-100%)"},
-          "100%": { "transform": "translatex(100%)"}
+          "0%": { "transform": "translatex(100%)"},
+          "100%": { "transform": "translatex(-100%)"}
         },
         blink: {
           "0%": { "visibility": "hidden"},

@@ -2,6 +2,5 @@ type listType = 'sentences' | 'fonts' | 'paragraphs' | 'foregroundGifs' | 'backg
 
 export default function fromList(list: listType) {
   const List = require(`../data/${list}.json`)
-	const item = List[Math.floor(Math.random() * List.length)]
-	return item
+	return List[Math.floor(Math.random() * List.length)]
 }

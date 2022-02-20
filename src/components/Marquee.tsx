@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react"
+import { useEffect, useRef } from "react"
 import randomColor from "../generators/Color"
 import fromList from "../generators/FromList"
 import randomMarquee from "../generators/FromList"
@@ -15,7 +15,7 @@ function Marquee() {
 		}
 	}, [marqueeRef])
 	
-	return (
+	return (<>
 		<div className='overflow-hidden border-4 m-5 w-5/6 md:w-1/3 mx-auto' ref={marqueeRef}>
 			<div className="animate-marquee10">
 				<p className='text-white text-2xl w-max animate-marqueeText10' ref={marqueeTextRef}>
@@ -23,7 +23,7 @@ function Marquee() {
 				</p>
 			</div>
 		</div>
-	)
+	</>)
 }
 
 export default Marquee
