@@ -1,6 +1,6 @@
 # <img src="https://web.archive.org/web/20090821222115/http://geocities.com/SunsetStrip/Lounge/7650/dollarspindownd.gif" width="30" height="30"> Relive the 90s web! <img src="https://web.archive.org/web/20090821222115/http://geocities.com/SunsetStrip/Lounge/7650/dollarspindownd.gif" width="30" height="30">  
 
-![Floppy Disk Logo](/public/icons/favicon-196.png "Floppy Disk Logo")
+This project is a way to party like it's 1997! Every time you refresh the page, a page is generated and will look like it came straight from Geocities. Each site is complete with gifs, a marquee, blinking text, a web portal, and more! [Try it now!](https://the90sweb.com)
 
 ---
 ## Contributing
