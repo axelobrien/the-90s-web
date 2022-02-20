@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "90s web",
+  "name": "The 90s Web",
   "icons": [
     {
       "src": "/icons/manifest-icon-192.maskable.png",
@@ -30,5 +30,6 @@
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "background_color": "#000000",
+  "orientation": "portrait"
 }
