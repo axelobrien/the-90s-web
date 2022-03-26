@@ -16,7 +16,7 @@ function Footer() {
   }, [divRef])
 
   return (<>
-    <div className='flex md:flex-row flex-col max-w-max w-1/2 mx-auto p-4' ref={divRef}>
+    <div className='flex flex-row justify-evenly flex-wrap md:min-w-max md:w-1/2 w-full mx-auto p-4' ref={divRef}>
       {links.map((link, index) => (
         <a className='underline mx-3 md:my-0 my-3 hover:text-red-700 active:text-blue-700' href={link.url} target={'_blank'} key={index}>
           {link.title}

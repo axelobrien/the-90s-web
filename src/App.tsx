@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from 'react'
+
 import Heading from './components/Heading'
 import Gif from './components/Gifs'
 import Filler from './components/Filler'
@@ -6,6 +7,7 @@ import List from './components/List'
 import Marquee from './components/Marquee'
 import Blink from './components/Blink'
 import Footer from './components/Footer'
+
 import fromList from './generators/FromList'
 
 function App() {
@@ -26,6 +28,7 @@ function App() {
 
   }, [rerenders])
 
+  // randomly shuffles an array
   function shuffle<T>(array: T[]) {
     for (let i = array.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
